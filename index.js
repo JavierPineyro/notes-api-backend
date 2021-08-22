@@ -69,7 +69,7 @@ app.use((request, response, next) => {
   });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 // Listen es Asincrono, le pasamos un callback que se ejecuta solo cuando ya se
 // levanto el server
 app.listen(PORT, () => {
